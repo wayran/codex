@@ -1,0 +1,53 @@
+:root { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif; color: #222; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #f3f3f3; }
+.app-shell { max-width: 540px; margin: 0 auto; min-height: 100vh; background: #f5f5f5; padding-bottom: 70px; }
+.page { padding-bottom: 12px; }
+.top-header { padding: 16px; background: #f7dede; }
+.top-header h1 { margin: 0; font-size: 42px; }
+.top-header p { margin: 0 0 12px; }
+.search-row { display:flex; gap:8px; }
+.search-row input { flex:1; padding:10px; border:1px solid #ff2f55; border-radius:8px; }
+.search-row button,.actions button,.big,.modal button { background:#ff2f3f; color:#fff; border:none; border-radius:24px; padding:10px 18px; }
+.hero { width: calc(100% - 32px); margin: 14px 16px; border-radius: 12px; height: 140px; object-fit: cover; }
+.tabs,.date-tabs { display:flex; justify-content: space-around; background:#fff; padding: 10px 0; }
+.tabs span,.date-tabs span,.auth-tabs span{ padding:8px 16px; border-radius:20px; color:#888; }
+.tabs .active,.date-tabs .active,.auth-tabs .active{ color:#ff2f3f; background:#f9d8dd; font-weight:700; }
+.card { background:#fff; margin:12px 16px; border-radius:10px; padding:10px; }
+.time{ color:#777; font-size:12px; }
+.product-row { display:flex; gap:10px; margin-top:8px; }
+.product-row img { width:130px; height:100px; object-fit:cover; border-radius:6px; }
+.meta h3{ margin:0 0 6px; font-size:22px; }
+.price { color:#ff2f3f; font-weight:700; }
+.actions{ display:flex; gap:10px; margin:10px 0; }
+.actions .ghost{ background:#f2d4d8; color:#c13a4f; }
+.big{ width:100%; font-size:34px; }
+.list-page { padding: 14px; }
+.hot-item{ display:flex; gap:10px; background:#fff; padding:8px; margin-bottom:12px; border-radius:8px; }
+.hot-item img{ width:170px; height:120px; object-fit:cover; }
+.hot-item h3{ margin:0; font-size:18px; }
+.hot-item .price{ margin:8px 0; }
+.hot-item aside{ display:flex; flex-direction:column; justify-content:space-between; }
+.coupon{ border:1px solid #ff5a7c; color:#ff2f3f; padding:2px 6px; border-radius:4px; font-size:12px; }
+.center-title{ text-align:center; font-size:30px; font-weight:700; background:#fff; padding:14px; }
+.income-box{ margin:12px 16px; background:linear-gradient(180deg,#ff3359,#ff7246); border-radius:10px; color:#fff; display:grid; grid-template-columns:repeat(3,1fr); }
+.income-box>div{ padding:14px; text-align:center; border-right:1px solid rgba(255,255,255,.2); border-bottom:1px solid rgba(255,255,255,.2); }
+.empty{ text-align:center; color:#555; margin-top:80px; font-size:34px; }
+.section-title { margin: 0 16px; font-size:42px; border-left:4px solid #ff3a49; padding-left:8px; }
+.profile-head{ background:linear-gradient(180deg,#ff3044,#ff858f); padding:18px; color:#fff; }
+.user{ font-size:42px; margin:30px 0; }
+.money-card{ background:#fff; color:#333; border-radius:8px; display:grid; grid-template-columns:repeat(3,1fr); }
+.money-card div{ text-align:center; padding:10px; }
+.money-card strong{ color:#ff2f3f; font-size:36px; }
+.tools{ display:flex; justify-content:space-around; background:#fff; padding:14px 8px; margin-top:8px; }
+.panel{ background:#fff; margin:12px 16px; border-radius:10px; padding:14px; }
+.auth-tabs{ display:flex; gap:10px; justify-content:center; margin-bottom:8px; }
+.warn{ color:#f00; font-weight:700; text-align:center; }
+.bottom-nav { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: min(540px,100%); display:grid; grid-template-columns:repeat(5,1fr); background:#fff; border-top:1px solid #eee; }
+.nav-item{ display:flex; flex-direction:column; align-items:center; justify-content:center; padding:8px 0; color:#aaa; text-decoration:none; font-size:12px; position:relative; }
+.nav-item.active{ color:#ff2f3f; font-weight:700; }
+.icon{ font-size:18px; }
+.hot-tag{ position:absolute; top:4px; right:12px; background:#ff334b; color:#fff; font-size:10px; border-radius:10px; padding:0 4px; }
+.modal-mask{ position:fixed; inset:0; background:rgba(0,0,0,.55); display:grid; place-items:center; }
+.modal{ width:min(460px,90%); background:#fff; border-radius:10px; padding:16px; text-align:center; }
+.modal img{ width:100%; border-radius:8px; margin:8px 0; }
